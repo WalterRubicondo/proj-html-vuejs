@@ -1,0 +1,33 @@
+.timer {
+  background-color: $secondary-background;
+  height: 40px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 12px;
+
+    * {
+      margin-left: 15px;
+    }
+
+    .text {
+      color: $primary-text;
+      font-weight: bold;
+    }
+    .digit {
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .btn {
+      @include button;
+      background-color: $color-button;
+      color: $color-white;
+      font-weight: bold;
+      &:hover {
+        background-color: $color-hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+nav {
+  height: 60px;
+  background-color: $color-white;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      width: 150px;
+    }
+    .menu {
+      margin-left: 15px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .social {
+      a {
+        color: $primary-text;
+      }
+      li {
+        margin-left: 15px;
+      }
+    }
+  }
+}

@@ -5,10 +5,131 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Artist</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
       <link rel="stylesheet" href="./assets/css/master.css">
     </head>
     <body>
+      <!-- TIMER -->
+      <template id="countdown-template">
+        <div class="timer">
+          <div class="container">
+            <div>
+              <p class="text">Starts TOMORROW! Our biggest event of the year...</p>
+            </div>
+            <div>
+              <p class="digit"> <i class="far fa-clock"></i> {{ days | two_digits }} : {{ hours | two_digits }} : {{ minutes | two_digits }} : {{ seconds | two_digits }}</p>
+            </div>
+            <div>
+              <a class="btn" href="#">Get ticket</a>
+            </div>
+          </div>
+        </div>
+      </template>
+      <!-- TIMER -->
       <div id="root">
+        <!-- Inserire data scadenza ticket "Y-m-d H:i:s" -->
+        <countdown date="2021-04-28 09:00:00"></countdown>
+        <header>
+          <!-- NAVBAR -->
+          <nav>
+            <div class="container pt-3" v-for="navbar in navbar">
+              <img :src=`./assets/img/${navbar.logo}` alt="Logo MaxCoach" class="logo">
+              <ul>
+                <li v-for="menu in navbar.menu" class="menu"> <a href=""> {{ menu }} </a> <i class="fas fa-angle-down"></i> </li>
+              </ul>
+              <ul class="social">
+                <li> <a href=""> <i class="fab fa-twitter"></i> </a> </li>
+                <li> <a href=""> <i class="fab fa-facebook-f"></i> </a> </li>
+                <li> <a href=""> <i class="fab fa-instagram"></i> </a> </li>
+                <li> <a href=""> <i class="fab fa-linkedin"></i> </a> </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- NAVBAR -->
+        </header>
+
+        <main>
+          <!-- JUMBO -->
+          <section role="jumbo">
+            <div class="container">
+
+            </div>
+          </section>
+          <!-- JUMBO -->
+          <!-- COACHING -->
+          <section role="coaching">
+            <div class="container">
+
+            </div>
+          </section>
+          <!-- COACHING -->
+          <!-- VIDEO -->
+          <section role="video">
+            <div class="container">
+
+            </div>
+          </section>
+          <!-- VIDEO -->
+          <!-- TESTIMONIALS -->
+          <section role="testimonials">
+            <div class="container">
+
+            </div>
+          </section>
+          <!-- TESTIMONIALS -->
+          <!-- ARTIST COACHING -->
+          <section role="artist-coaching">
+            <div class="container">
+
+            </div>
+          </section>
+          <!-- TESTIMONARTIST COACHINGIALS -->
+          <!-- ARTICLES -->
+          <section role="articles">
+            <div class="container">
+
+            </div>
+          </section>
+          <!-- ARTICLES -->
+          <!-- EVENTS -->
+          <section role="events">
+            <div class="container">
+
+            </div>
+          </section>
+          <!-- EVENTS -->
+          <!-- NEWSLETTER -->
+          <section role="newsletter">
+            <div class="container">
+
+            </div>
+          </section>
+          <!-- NEWSLETTER -->
+        </main>
+
+        <footer>
+          <!-- INFO & LINKS -->
+          <section role="info">
+            <div class="container">
+
+            </div>
+          </section>
+          <!-- INFO & LINKS -->
+          <!-- COPYRIGHT-->
+          <section role="copyright">
+            <div class="container">
+
+            </div>
+          </section>
+          <!-- COPYRIGHT-->
+
+
+        </footer>
+
+        <section role="menu">
+
+        </section>
 
       </div>
 

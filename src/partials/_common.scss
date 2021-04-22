@@ -1,0 +1,41 @@
+body {
+  font-family: Gilroy;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+@for $i from 1 to 7 {
+  .mt-#{$i * 1} {
+    margin-top: 0.5em * $i;
+  }
+}
+
+@for $i from 1 to 7 {
+  .mb-#{$i * 1} {
+    margin-bottom: 0.5em * $i;
+  }
+}
+
+@for $i from 1 to 7 {
+  .pt-#{$i * 1} {
+    padding-top: 0.5em * $i;
+  }
+}
+
+@for $i from 1 to 7 {
+  .pb-#{$i * 1} {
+    padding-bottom: 0.5em * $i;
+  }
+}
