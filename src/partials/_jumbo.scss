@@ -1,0 +1,80 @@
+section[role="jumbo"] {
+  background-color: $secondary-background;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .head {
+    position: absolute;
+    height: 250px;
+    left: 20%;
+    top: 55%;
+  }
+  .dots {
+    position: absolute;
+    width: 250px;
+  }
+  .feather {
+    position: absolute;
+    width: 100px;
+    right: 10%;
+    top: 10%;
+  }
+  .monkey {
+    position: absolute;
+    width: 150px;
+    left: 7%;
+    bottom: 10%;
+    z-index: 9;
+  }
+  .abstract {
+    position: absolute;
+    left: 16%;
+    bottom: 40%;
+    z-index: 8;
+  }
+  .shape {
+    position: absolute;
+    right: 7%;
+  }
+  .stripes {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+  }
+  .boy {
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    .text {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 3em;
+      z-index: 10;
+      .title {
+        @include title;
+      }
+      .sub-title {
+        font-size: 32px;
+        text-align: center;
+      }
+      .btn {
+        @include button;
+        padding: 0px 30px;
+        background-color: $color-button;
+        color: $color-white;
+        font-weight: bold;
+        font-size: 12px;
+        &:hover {
+          background-color: $color-hover;
+        }
+      }
+    }
+  }
+}
