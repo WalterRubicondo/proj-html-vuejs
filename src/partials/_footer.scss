@@ -1,0 +1,66 @@
+section[role="info"] {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    ul {
+      flex-direction: column;
+      line-height: 2em;
+      .bold {
+        font-weight: bold;
+      }
+      li {
+        color: $primary-text;
+        font-size: 12px;
+        font-weight: 500;
+        &:first-child {
+          font-size: 16px;
+        }
+      }
+    }
+    .column-left {
+      width: 30%;
+      .social {
+        ul {
+          flex-direction: row;
+          li {
+            i {
+              color: $primary-text;
+              font-size: 24px;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+    .column-center {
+      width: 20%;
+    }
+    .column-right {
+      width: 30%;
+      .instagram {
+        font-weight: bold;
+        font-size: 16px;
+        color: $primary-text;
+      }
+      .artist {
+        color: $color-button;
+        font-weight: bold;
+      }
+      .photo {
+        display: flex;
+        flex-direction: row;
+        img {
+          width: 100px;
+          height: 100px;
+          margin-right: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+section[role="copyright"] {
+  text-align: center;
+  color: $primary-text;
+}

@@ -1,0 +1,483 @@
+section[role="coaching"] {
+  position: relative;
+  background-color: $primary-background;
+  background-image: url(./../../assets/img/maxcoach-shape-14.png);
+  background-position: 0% 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  .shape {
+    position: absolute;
+    transform: rotate(220deg);
+    left: -7%;
+    top: 13%;
+    width: 30%;
+  }
+  .waves {
+    position: absolute;
+    right: -3%;
+    top: 22%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .text {
+      width: 34%;
+      text-align: center;
+      .title {
+        @include title;
+      }
+    }
+    .content {
+      display: flex;
+      .card {
+        width: 25%;
+        margin: 0 30px;
+        line-height: 1.5em;
+        z-index: 1;
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      .quote-icon {
+        width: 50px;
+      }
+      .quote {
+        font-size: 42px;
+        padding: 20px 95px;
+        text-align: center;
+      }
+      .sign {
+        @include title;
+      }
+      p {
+        font-size: 14px;
+        padding: 10px 80px;
+        line-height: 1.5em;
+      }
+      .btn {
+        @include button;
+        background-color: $colorlight-button;
+        color:  $color-button;
+        font-weight: bold;
+        font-size: 12px;
+        align-self: flex-start;
+        margin-left: 80px;
+        &:hover {
+          background-color: $color-hover;
+        }
+      }
+    }
+  }
+}
+
+section[role="video"] {
+  .container {
+    .video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      .youtube-player {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
+    }
+  }
+  .waves {
+    position: relative;
+    svg {
+      position: absolute;
+      bottom: 0;
+      height: 528px;
+      width: 100%;
+    }
+  }
+}
+
+section[role="testimonials"] {
+  background-color: $tertiary-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+    .text {
+      text-align: center;
+      .title {
+        @include title;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      .card {
+        width: calc(100% / 3);
+        padding: 20px 40px;
+        margin: 20px;
+        background: #FCFBFA;
+        opacity: 0.5;
+        line-height: 1.5em;
+        &.active {
+          background-color: $primary-background;
+          opacity: 1;
+        }
+        p {
+          font-size: 12px;
+        }
+        .witness {
+          display: flex;
+          img {
+            width: 70px;
+            border-radius: 50px;
+          }
+          .author {
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+            margin-left: 20px;
+            .name {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .dots {
+      text-align: center;
+      i {
+        color: #D0D0D0;
+        font-size: 8px;
+        margin-right: 10px;
+        &.active {
+          color: #000000;
+          font-size: 12px;
+        }
+      }
+    }
+}
+
+section[role="artist-coaching"] {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .text {
+      width: 34%;
+      text-align: center;
+      .title {
+        @include title;
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      .side-text {
+        font-size: 140px;
+        -webkit-text-stroke-color: #F4EBE2;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke-width: 2px;
+        transform: rotate(90deg);
+        position: absolute;
+        left: 85%;
+        top: 35%;
+      }
+      .card {
+        width: (100% / 4 -20px);
+        margin: 10px;
+        img {
+          width: 250px;
+        }
+        &:hover .info {
+          border: 2px solid $color-button;
+          animation: up 0.3s linear;
+          animation-fill-mode: forwards;
+          @keyframes up {
+            0% {top: 0px}
+            100% {top: -40px}
+          }
+        }
+        .info {
+          width: 220px;
+          padding: 15px 30px 0 15px;
+          line-height: 2em;
+          position: relative;
+          z-index: 1;
+          background-color: $color-white;
+          .price {
+            display: block;
+            color: $color-button;
+            font-weight: bold;
+          }
+          h4 {
+            font-size: 14px;
+          }
+          .course {
+            font-size: 10px;
+            margin-right: 5px;
+          }
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+      }
+    }
+    a {
+      @include button;
+      background-color: $colorlight-button;
+      color:  $color-button;
+      font-weight: bold;
+      &:hover {
+        background-color: $color-hover;
+      }
+  }
+}
+
+section[role="articles"] {
+  background-color: $tertiary-background;
+  background-image: url(./../../assets/img/maxcoach-shape-03.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .text {
+      width: 34%;
+      text-align: center;
+      .title {
+        @include title;
+      }
+    }
+    .content {
+      line-height: 1.5em;
+      .card {
+        width: 200px;
+        background-color: $primary-background;
+        position: absolute;
+        img {
+          width: 200px;
+        }
+        .info {
+          padding: 15px;
+          h4 {
+            font-size: 14px;
+          }
+          span {
+            font-size: 10px;
+            margin-right: 5px;
+          }
+          i {
+            margin-right: 5px;
+          }
+        }
+        &.left {
+          top: 35%;
+          left: 15%;
+        }
+        &.right {
+          right: 15%;
+          top: 25%;
+        }
+      }
+      .card-center {
+        background-image: url(./../../assets/img/artist-blog-02-500x680.jpg);
+        height: 500px;
+        width: 350px;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .layer {
+          background-image:linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .info {
+          position: absolute;
+          color: $color-white;
+          top:65%;
+          padding: 20px;
+          line-height: 2em;
+          span {
+            font-size: 10px;
+            margin-right: 5px;
+          }
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+      .link {
+        text-align: center;
+        >* {
+          font-size: 12px;
+        }
+        a {
+          font-weight: bold;
+          color: $color-button;
+          border-bottom: 1px solid #DCDCDC;
+        }
+      }
+    }
+  }
+}
+
+section[role="events"]{
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .text {
+      width: 34%;
+      text-align: center;
+      .title {
+        @include title;
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      .side-text {
+        font-size: 140px;
+        -webkit-text-stroke-color: #F4EBE2;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke-width: 2px;
+        transform: rotate(90deg);
+        position: absolute;
+        right: 88%;
+        top: 50%;
+      }
+      .card {
+        width: calc(100% / 2 - 30px);
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        img {
+          width: 200px;
+        }
+        &:nth-child(n+3){
+          text-align: right;
+        }
+        .info {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: 250px;
+          line-height: 2em;
+          padding: 25px;
+          .date {
+            font-weight: bold;
+            color: $primary-text;
+            font-size: 12px;
+          }
+          .site {
+            font-weight: bold;
+            color: $primary-text;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+section[role="newsletter"] {
+  background-color: #244186;
+  position: relative;
+  img {
+    position: absolute;
+    &.left {
+      height: 150px;
+    }
+    &.right {
+      left: 81%;
+      height: 150px;
+    }
+  }
+  .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text {
+      text-align: right;
+      width: 220px;
+      font-size: 26px;
+      color: $color-white;
+      margin-right: 30px;
+    }
+    .send-mail {
+      color: $color-white;
+      font-size: 20px;
+      border-bottom: 1px solid $color-white;
+      input {
+        background-color: #244186;
+        font-size: 20px;
+        color: $color-white;
+        outline: none;
+        width: 500px;
+        &::placeholder {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+section[role="menu"]{
+  .side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 98%;
+    top: 20%;
+    width: 30px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: $primary-background;
+    border: 1px solid #eee;
+    box-shadow: -3px 0 10px -2px rgb(0 0 0 / 10%);
+    i {
+      color: $primary-text;
+    }
+  }
+  .arrow {
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+    i {
+      border-radius: 30px;
+      background: $color-button;
+      color: white;
+      padding: 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}

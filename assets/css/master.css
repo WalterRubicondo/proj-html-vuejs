@@ -7,6 +7,8 @@
 
 body {
   font-family: Gilroy;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .container {
@@ -144,7 +146,7 @@ ul {
 .timer .container .btn {
   padding: 8px 35px;
   border-radius: 5px;
-  background-color: #EF6F31;
+  background-color: #2B599F;
   color: #FFFFFF;
   font-weight: bold;
 }
@@ -251,11 +253,580 @@ section[role=jumbo] .container .text .btn {
   padding: 8px 35px;
   border-radius: 5px;
   padding: 0px 30px;
-  background-color: #EF6F31;
+  background-color: #2B599F;
   color: #FFFFFF;
   font-weight: bold;
   font-size: 12px;
 }
 section[role=jumbo] .container .text .btn:hover {
   background-color: #69a0fd;
+}
+
+section[role=coaching] {
+  position: relative;
+  background-color: #ffffff;
+  background-image: url(./../../assets/img/maxcoach-shape-14.png);
+  background-position: 0% 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section[role=coaching] .shape {
+  position: absolute;
+  transform: rotate(220deg);
+  left: -7%;
+  top: 13%;
+  width: 30%;
+}
+section[role=coaching] .waves {
+  position: absolute;
+  right: -3%;
+  top: 22%;
+}
+section[role=coaching] .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section[role=coaching] .container .text {
+  width: 34%;
+  text-align: center;
+}
+section[role=coaching] .container .text .title {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #6ac4f1;
+}
+section[role=coaching] .container .content {
+  display: flex;
+}
+section[role=coaching] .container .content .card {
+  width: 25%;
+  margin: 0 30px;
+  line-height: 1.5em;
+  z-index: 1;
+}
+section[role=coaching] .container .content .card p {
+  font-size: 12px;
+}
+section[role=coaching] .container .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+section[role=coaching] .container .column .quote-icon {
+  width: 50px;
+}
+section[role=coaching] .container .column .quote {
+  font-size: 42px;
+  padding: 20px 95px;
+  text-align: center;
+}
+section[role=coaching] .container .column .sign {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #6ac4f1;
+}
+section[role=coaching] .container .column p {
+  font-size: 14px;
+  padding: 10px 80px;
+  line-height: 1.5em;
+}
+section[role=coaching] .container .column .btn {
+  padding: 8px 35px;
+  border-radius: 5px;
+  background-color: rgba(239, 111, 49, 0.1);
+  color: #2B599F;
+  font-weight: bold;
+  font-size: 12px;
+  align-self: flex-start;
+  margin-left: 80px;
+}
+section[role=coaching] .container .column .btn:hover {
+  background-color: #69a0fd;
+}
+
+section[role=video] .container .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+section[role=video] .container .video .youtube-player {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+section[role=video] .waves {
+  position: relative;
+}
+section[role=video] .waves svg {
+  position: absolute;
+  bottom: 0;
+  height: 528px;
+  width: 100%;
+}
+
+section[role=testimonials] {
+  background-color: #F5F7FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section[role=testimonials] .text {
+  text-align: center;
+}
+section[role=testimonials] .text .title {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #6ac4f1;
+}
+section[role=testimonials] .content {
+  display: flex;
+  flex-direction: row;
+}
+section[role=testimonials] .content .card {
+  width: calc(100% / 3);
+  padding: 20px 40px;
+  margin: 20px;
+  background: #FCFBFA;
+  opacity: 0.5;
+  line-height: 1.5em;
+}
+section[role=testimonials] .content .card.active {
+  background-color: #ffffff;
+  opacity: 1;
+}
+section[role=testimonials] .content .card p {
+  font-size: 12px;
+}
+section[role=testimonials] .content .card .witness {
+  display: flex;
+}
+section[role=testimonials] .content .card .witness img {
+  width: 70px;
+  border-radius: 50px;
+}
+section[role=testimonials] .content .card .witness .author {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-left: 20px;
+}
+section[role=testimonials] .content .card .witness .author .name {
+  font-weight: bold;
+}
+section[role=testimonials] .dots {
+  text-align: center;
+}
+section[role=testimonials] .dots i {
+  color: #D0D0D0;
+  font-size: 8px;
+  margin-right: 10px;
+}
+section[role=testimonials] .dots i.active {
+  color: #000000;
+  font-size: 12px;
+}
+
+section[role=artist-coaching] .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section[role=artist-coaching] .container .text {
+  width: 34%;
+  text-align: center;
+}
+section[role=artist-coaching] .container .text .title {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #6ac4f1;
+}
+section[role=artist-coaching] .container .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+section[role=artist-coaching] .container .content .side-text {
+  font-size: 140px;
+  -webkit-text-stroke-color: #F4EBE2;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 2px;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 85%;
+  top: 35%;
+}
+section[role=artist-coaching] .container .content .card {
+  width: 100%/4 -20px;
+  margin: 10px;
+}
+section[role=artist-coaching] .container .content .card img {
+  width: 250px;
+}
+section[role=artist-coaching] .container .content .card:hover .info {
+  border: 2px solid #2B599F;
+  -webkit-animation: up 0.3s linear;
+          animation: up 0.3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes up {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -40px;
+  }
+}
+@keyframes up {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -40px;
+  }
+}
+section[role=artist-coaching] .container .content .card .info {
+  width: 220px;
+  padding: 15px 30px 0 15px;
+  line-height: 2em;
+  position: relative;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+section[role=artist-coaching] .container .content .card .info .price {
+  display: block;
+  color: #2B599F;
+  font-weight: bold;
+}
+section[role=artist-coaching] .container .content .card .info h4 {
+  font-size: 14px;
+}
+section[role=artist-coaching] .container .content .card .info .course {
+  font-size: 10px;
+  margin-right: 5px;
+}
+section[role=artist-coaching] .container .content .card .info i {
+  margin-right: 5px;
+}
+section[role=artist-coaching] a {
+  padding: 8px 35px;
+  border-radius: 5px;
+  background-color: rgba(239, 111, 49, 0.1);
+  color: #2B599F;
+  font-weight: bold;
+}
+section[role=artist-coaching] a:hover {
+  background-color: #69a0fd;
+}
+
+section[role=articles] {
+  background-color: #F5F7FA;
+  background-image: url(./../../assets/img/maxcoach-shape-03.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section[role=articles] .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+section[role=articles] .container .text {
+  width: 34%;
+  text-align: center;
+}
+section[role=articles] .container .text .title {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #6ac4f1;
+}
+section[role=articles] .container .content {
+  line-height: 1.5em;
+}
+section[role=articles] .container .content .card {
+  width: 200px;
+  background-color: #ffffff;
+  position: absolute;
+}
+section[role=articles] .container .content .card img {
+  width: 200px;
+}
+section[role=articles] .container .content .card .info {
+  padding: 15px;
+}
+section[role=articles] .container .content .card .info h4 {
+  font-size: 14px;
+}
+section[role=articles] .container .content .card .info span {
+  font-size: 10px;
+  margin-right: 5px;
+}
+section[role=articles] .container .content .card .info i {
+  margin-right: 5px;
+}
+section[role=articles] .container .content .card.left {
+  top: 35%;
+  left: 15%;
+}
+section[role=articles] .container .content .card.right {
+  right: 15%;
+  top: 25%;
+}
+section[role=articles] .container .content .card-center {
+  background-image: url(./../../assets/img/artist-blog-02-500x680.jpg);
+  height: 500px;
+  width: 350px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section[role=articles] .container .content .card-center .layer {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section[role=articles] .container .content .card-center .info {
+  position: absolute;
+  color: #FFFFFF;
+  top: 65%;
+  padding: 20px;
+  line-height: 2em;
+}
+section[role=articles] .container .content .card-center .info span {
+  font-size: 10px;
+  margin-right: 5px;
+}
+section[role=articles] .container .content .card-center .info i {
+  margin-right: 5px;
+}
+section[role=articles] .container .content .link {
+  text-align: center;
+}
+section[role=articles] .container .content .link > * {
+  font-size: 12px;
+}
+section[role=articles] .container .content .link a {
+  font-weight: bold;
+  color: #2B599F;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+section[role=events] .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section[role=events] .container .text {
+  width: 34%;
+  text-align: center;
+}
+section[role=events] .container .text .title {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #6ac4f1;
+}
+section[role=events] .container .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+section[role=events] .container .content .side-text {
+  font-size: 140px;
+  -webkit-text-stroke-color: #F4EBE2;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 2px;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 88%;
+  top: 50%;
+}
+section[role=events] .container .content .card {
+  width: calc(100% / 2 - 30px);
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+section[role=events] .container .content .card img {
+  width: 200px;
+}
+section[role=events] .container .content .card:nth-child(n+3) {
+  text-align: right;
+}
+section[role=events] .container .content .card .info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+  line-height: 2em;
+  padding: 25px;
+}
+section[role=events] .container .content .card .info .date {
+  font-weight: bold;
+  color: #797979;
+  font-size: 12px;
+}
+section[role=events] .container .content .card .info .site {
+  font-weight: bold;
+  color: #797979;
+  font-size: 12px;
+}
+
+section[role=newsletter] {
+  background-color: #244186;
+  position: relative;
+}
+section[role=newsletter] img {
+  position: absolute;
+}
+section[role=newsletter] img.left {
+  height: 150px;
+}
+section[role=newsletter] img.right {
+  left: 81%;
+  height: 150px;
+}
+section[role=newsletter] .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section[role=newsletter] .container .text {
+  text-align: right;
+  width: 220px;
+  font-size: 26px;
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+section[role=newsletter] .container .send-mail {
+  color: #FFFFFF;
+  font-size: 20px;
+  border-bottom: 1px solid #FFFFFF;
+}
+section[role=newsletter] .container .send-mail input {
+  background-color: #244186;
+  font-size: 20px;
+  color: #FFFFFF;
+  outline: none;
+  width: 500px;
+}
+section[role=newsletter] .container .send-mail input::-moz-placeholder {
+  color: #FFFFFF;
+}
+section[role=newsletter] .container .send-mail input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+section[role=newsletter] .container .send-mail input::placeholder {
+  color: #FFFFFF;
+}
+
+section[role=menu] .side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 98%;
+  top: 20%;
+  width: 30px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  box-shadow: -3px 0 10px -2px rgba(0, 0, 0, 0.1);
+}
+section[role=menu] .side-menu i {
+  color: #797979;
+}
+section[role=menu] .arrow {
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+}
+section[role=menu] .arrow i {
+  border-radius: 30px;
+  background: #2B599F;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+section[role=info] .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+section[role=info] .container ul {
+  flex-direction: column;
+  line-height: 2em;
+}
+section[role=info] .container ul .bold {
+  font-weight: bold;
+}
+section[role=info] .container ul li {
+  color: #797979;
+  font-size: 12px;
+  font-weight: 500;
+}
+section[role=info] .container ul li:first-child {
+  font-size: 16px;
+}
+section[role=info] .container .column-left {
+  width: 30%;
+}
+section[role=info] .container .column-left .social ul {
+  flex-direction: row;
+}
+section[role=info] .container .column-left .social ul li i {
+  color: #797979;
+  font-size: 24px;
+  margin-right: 20px;
+}
+section[role=info] .container .column-center {
+  width: 20%;
+}
+section[role=info] .container .column-right {
+  width: 30%;
+}
+section[role=info] .container .column-right .instagram {
+  font-weight: bold;
+  font-size: 16px;
+  color: #797979;
+}
+section[role=info] .container .column-right .artist {
+  color: #2B599F;
+  font-weight: bold;
+}
+section[role=info] .container .column-right .photo {
+  display: flex;
+  flex-direction: row;
+}
+section[role=info] .container .column-right .photo img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+section[role=copyright] {
+  text-align: center;
+  color: #797979;
 }
