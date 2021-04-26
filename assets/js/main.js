@@ -53,12 +53,12 @@ var app = new Vue({
     {
       logo: "dark-logo.png",
       menu: {
-        home: "Home",
-        pages: "Pages",
-        courses: "Courses",
-        features: "Features",
-        blog: "Blog",
-        shop: "Shop",
+        'Home': "https://www.google.it",
+        'Pages': "https://www.google.it",
+        'Courses': "https://www.google.it",
+        'Features': "https://www.google.it",
+        'Blog': "https://www.google.it",
+        'Shop': "https://www.google.it",
       },
     }],
     footer: [
@@ -69,19 +69,30 @@ var app = new Vue({
           email: "support@maxcoach.com"
         },
         explore: {
-          start: "Start here",
-          story: "Succes story",
-          blog: "Blog",
-          courses: "Courses",
-          contact: "Contact us"
+          'Start here': "https://www.google.it",
+          'Succes story': "https://www.google.it",
+          'Blog': "https://www.google.it",
+          'Courses': "https://www.google.it",
+          'Contact us': "https://www.google.it"
         },
         infos: {
-          membership: "Membership",
-          guide: "Purchase guide",
-          privacy: "Privacy polivy",
-          services: "Terms of service",
+          'Membership': "https://www.google.it",
+          'Purchase guide': "https://www.google.it",
+          'Privacy policy': "https://www.google.it",
+          'Terms of service': "https://www.google.it",
         },
+        photos: {
+          firstphoto: "artist-blog-03-480x356.jpeg",
+          secondphoto: "artist-event-03-250x300.jpg",
+          thirdphoto: "artist-event-02-250x300.jpg",
+        }
       }],
+      social: {
+        'twitter': "fab fa-twitter",
+        'facebook': "fab fa-facebook-f",
+        'instagram': "fab fa-instagram",
+        'linkedin': "fab fa-linkedin",
+      },
   },
   methods: {
   }

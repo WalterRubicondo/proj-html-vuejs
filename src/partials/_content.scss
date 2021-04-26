@@ -122,14 +122,12 @@ section[role="testimonials"] {
       display: flex;
       flex-direction: row;
       .card {
-        width: calc(100% / 3);
         padding: 20px 40px;
         margin: 20px;
-        background: #FCFBFA;
+        background-color: $primary-background;
         opacity: 0.5;
         line-height: 1.5em;
         &.active {
-          background-color: $primary-background;
           opacity: 1;
         }
         p {
@@ -174,7 +172,6 @@ section[role="artist-coaching"] {
     align-items: center;
     flex-direction: column;
     .text {
-      width: 34%;
       text-align: center;
       .title {
         @include title;
@@ -196,7 +193,6 @@ section[role="artist-coaching"] {
         top: 35%;
       }
       .card {
-        width: (100% / 4 -20px);
         margin: 10px;
         img {
           width: 250px;
@@ -260,7 +256,6 @@ section[role="articles"] {
     flex-direction: column;
     position: relative;
     .text {
-      width: 34%;
       text-align: center;
       .title {
         @include title;
@@ -350,7 +345,6 @@ section[role="events"]{
     align-items: center;
     flex-direction: column;
     .text {
-      width: 34%;
       text-align: center;
       .title {
         @include title;
@@ -372,14 +366,13 @@ section[role="events"]{
         top: 50%;
       }
       .card {
-        width: calc(100% / 2 - 30px);
         display: flex;
         flex-direction: row;
         margin: 15px;
         img {
           width: 200px;
         }
-        &:nth-child(n+3){
+        &:nth-child(n+4){
           text-align: right;
         }
         .info {

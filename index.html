@@ -38,13 +38,10 @@
             <div class="container pt-3" v-for="navbar in navbar">
               <img :src=`./assets/img/${navbar.logo}` alt="Logo MaxCoach" class="logo">
               <ul>
-                <li v-for="menu in navbar.menu" class="menu"> <a href=""> {{ menu }} </a> <i class="fas fa-angle-down"></i> </li>
+                <li v-for="(link, menu) in navbar.menu" class="menu"> <a :href=`${link}`> {{ menu }} </a> <i class="fas fa-angle-down"></i> </li>
               </ul>
               <ul class="social">
-                <li> <a href=""> <i class="fab fa-twitter"></i> </a> </li>
-                <li> <a href=""> <i class="fab fa-facebook-f"></i> </a> </li>
-                <li> <a href=""> <i class="fab fa-instagram"></i> </a> </li>
-                <li> <a href=""> <i class="fab fa-linkedin"></i> </a> </li>
+                <li v-for="(link, social) in social"> <a href=""> <i :class=`${link}`></i> </a> </li>
               </ul>
             </div>
           </nav>
@@ -379,13 +376,10 @@
               <div class="column-left">
                 <ul>
                   <li class="bold">Adress</li>
-                  <li v-for="adress in footer.adress" class="text"> <a href=""> {{ adress }} </a> </li>
+                  <li v-for="adress in footer.adress" class="text"> {{ adress }} </li>
                   <div class="social pt-3">
                     <ul>
-                      <li> <a href=""> <i class="fab fa-twitter"></i> </a> </li>
-                      <li> <a href=""> <i class="fab fa-facebook-f"></i> </a> </li>
-                      <li> <a href=""> <i class="fab fa-instagram"></i> </a> </li>
-                      <li> <a href=""> <i class="fab fa-linkedin"></i> </a> </li>
+                      <li v-for="(link, social) in social"> <a href=""> <i :class=`${link}`></i> </a> </li>
                     </ul>
                   </div>
                 </ul>
@@ -393,22 +387,20 @@
               <div class="column-center">
                 <ul>
                   <li class="bold">Explore</li>
-                  <li v-for="link in footer.explore" class="text"> <a href=""> {{ link }} </a> </li>
+                  <li v-for="(link, name) in footer.explore" class="text"> <a :href=`${link}`> {{ name }} </a> </li>
                 </ul>
               </div>
               <div class="column-center">
                 <ul>
                   <li class="bold">Information</li>
-                  <li v-for="link in footer.infos" class="text"> <a href=""> {{ link }} </a> </li>
+                  <li v-for="(link, name) in footer.infos" class="text"> <a :href=`${link}`> {{ name }} </a> </li>
                 </ul>
               </div>
               <div class="column-right">
                 <span class="instagram">Instagram</span>
                 <span class="artist">@maxcoach</span>
                 <div class="photo">
-                  <img src="./assets/img/artist-blog-03-480x356.jpeg" alt="">
-                  <img src="./assets/img/artist-event-03-250x300.jpg" alt="">
-                  <img src="./assets/img/artist-event-02-250x300.jpg" alt="">
+                  <img v-for="(link, name) in footer.photos" :src=`./assets/img/${link}` alt="">
                 </div>
               </div>
             </div>

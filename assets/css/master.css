@@ -391,15 +391,13 @@ section[role=testimonials] .content {
   flex-direction: row;
 }
 section[role=testimonials] .content .card {
-  width: calc(100% / 3);
   padding: 20px 40px;
   margin: 20px;
-  background: #FCFBFA;
+  background-color: #ffffff;
   opacity: 0.5;
   line-height: 1.5em;
 }
 section[role=testimonials] .content .card.active {
-  background-color: #ffffff;
   opacity: 1;
 }
 section[role=testimonials] .content .card p {
@@ -441,7 +439,6 @@ section[role=artist-coaching] .container {
   flex-direction: column;
 }
 section[role=artist-coaching] .container .text {
-  width: 34%;
   text-align: center;
 }
 section[role=artist-coaching] .container .text .title {
@@ -466,7 +463,6 @@ section[role=artist-coaching] .container .content .side-text {
   top: 35%;
 }
 section[role=artist-coaching] .container .content .card {
-  width: 100%/4 -20px;
   margin: 10px;
 }
 section[role=artist-coaching] .container .content .card img {
@@ -544,7 +540,6 @@ section[role=articles] .container {
   position: relative;
 }
 section[role=articles] .container .text {
-  width: 34%;
   text-align: center;
 }
 section[role=articles] .container .text .title {
@@ -634,7 +629,6 @@ section[role=events] .container {
   flex-direction: column;
 }
 section[role=events] .container .text {
-  width: 34%;
   text-align: center;
 }
 section[role=events] .container .text .title {
@@ -659,7 +653,6 @@ section[role=events] .container .content .side-text {
   top: 50%;
 }
 section[role=events] .container .content .card {
-  width: calc(100% / 2 - 30px);
   display: flex;
   flex-direction: row;
   margin: 15px;
@@ -667,7 +660,7 @@ section[role=events] .container .content .card {
 section[role=events] .container .content .card img {
   width: 200px;
 }
-section[role=events] .container .content .card:nth-child(n+3) {
+section[role=events] .container .content .card:nth-child(n+4) {
   text-align: right;
 }
 section[role=events] .container .content .card .info {
