@@ -206,13 +206,14 @@ section[role=jumbo] .monkey {
   width: 150px;
   left: 7%;
   bottom: 10%;
-  z-index: 9;
+  z-index: 1;
+  box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.25);
 }
 section[role=jumbo] .abstract {
   position: absolute;
   left: 16%;
   bottom: 40%;
-  z-index: 8;
+  box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.25);
 }
 section[role=jumbo] .shape {
   position: absolute;
@@ -227,6 +228,7 @@ section[role=jumbo] .boy {
   position: absolute;
   right: 15%;
   bottom: 15%;
+  box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.25);
 }
 section[role=jumbo] .container {
   display: flex;
@@ -304,7 +306,6 @@ section[role=coaching] .container .content .card {
   width: 25%;
   margin: 0 30px;
   line-height: 1.5em;
-  z-index: 1;
 }
 section[role=coaching] .container .content .card p {
   font-size: 12px;
@@ -554,6 +555,7 @@ section[role=articles] .container .content .card {
   width: 200px;
   background-color: #ffffff;
   position: absolute;
+  box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.25);
 }
 section[role=articles] .container .content .card img {
   width: 200px;

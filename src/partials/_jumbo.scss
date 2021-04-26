@@ -25,13 +25,14 @@ section[role="jumbo"] {
     width: 150px;
     left: 7%;
     bottom: 10%;
-    z-index: 9;
+    z-index: 1;
+    box-shadow: 0px 10px 34px 0px rgb(0 0 0 / 25%);
   }
   .abstract {
     position: absolute;
     left: 16%;
     bottom: 40%;
-    z-index: 8;
+    box-shadow: 0px 10px 34px 0px rgb(0 0 0 / 25%);
   }
   .shape {
     position: absolute;
@@ -46,7 +47,8 @@ section[role="jumbo"] {
     position: absolute;
     right: 15%;
     bottom: 15%;
-  }
+    box-shadow: 0px 10px 34px 0px rgb(0 0 0 / 25%);
+    }
   .container {
     display: flex;
     justify-content: center;

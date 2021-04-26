@@ -35,7 +35,6 @@ section[role="coaching"] {
         width: 25%;
         margin: 0 30px;
         line-height: 1.5em;
-        z-index: 1;
         p {
           font-size: 12px;
         }
@@ -267,6 +266,7 @@ section[role="articles"] {
         width: 200px;
         background-color: $primary-background;
         position: absolute;
+        box-shadow: 0px 10px 34px 0px rgb(0 0 0 / 25%);
         img {
           width: 200px;
         }
